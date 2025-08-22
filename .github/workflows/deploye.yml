@@ -37,8 +37,8 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: lekhmitra.roshanproject.site   # 👈 from your cPanel
-          username: ${{ secrets.FTP_USERNAME }}  # set this in GitHub Secrets
-          password: ${{ secrets.FTP_PASSWORD }}  # set this in GitHub Secrets
+          username: ${{ secrets.CPANEL_FTP_USER }}  # set this in GitHub Secrets
+          password: ${{ secrets.CPANEL_FTP_PASSWORD }}  # set this in GitHub Secrets
           protocol: ftps                         # try ftps first
           port: 21
           server-dir: /home/roshanpr/lekhmitra/  # 👈 from cPanel "Path"
