@@ -24,10 +24,10 @@ jobs:
 
       - name: Build static assets
         env:
-          DJANGO_SETTINGS_MODULE: mysite.settings
-          SECRET_KEY: dummy-secret-for-build
+          DJANGO_SETTINGS_MODULE: config.settings
+          SECRET_KEY: django-insecure-2k2)pk0sqz&n4ogoabl4%zd!_oso7pu_z6ncy^zy74ag$3bt%!
           DEBUG: "0"
-          ALLOWED_HOSTS: "sub.example.com"
+          ALLOWED_HOSTS: "lekhmitra.roshanproject.site"
         run: |
           python manage.py collectstatic --noinput
 
@@ -45,7 +45,7 @@ jobs:
           protocol: ftps
           port: 21
           # Update this path to your app root shown in cPanel "Application root"
-          server-dir: /home/youruser/apps/mysite/
+          server-dir: /home/youruser/apps/config/
           exclude: |
             **/.git*
             **/.github/**
