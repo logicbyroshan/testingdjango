@@ -39,7 +39,7 @@ jobs:
           server: lekhmitra.roshanproject.site   # 👈 from your cPanel
           username: ${{ secrets.CPANEL_FTP_USER }}  # set this in GitHub Secrets
           password: ${{ secrets.CPANEL_FTP_PASSWORD }}  # set this in GitHub Secrets
-          protocol: ftps                         # try ftps first
+          protocol: ftp                         # try ftps first
           port: 21
           server-dir: /home/roshanpr/lekhmitra/  # 👈 from cPanel "Path"
           passive: true
